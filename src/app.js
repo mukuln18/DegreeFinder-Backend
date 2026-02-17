@@ -11,9 +11,9 @@ app.use(cors());
 app.use(express.json());
 
 
-// app.get("/", (req, res) => {
-//   res.send("API running");
-// });
+app.get("/", (req, res) => {
+  res.send("API running");
+});
 
 app.use("/api/colleges", collegeRoutes);
 app.use("/api/auth", authRoutes);
