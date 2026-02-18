@@ -1,98 +1,125 @@
-DegreeFinder Backend (College Platform)
+# DegreeFinder Backend (College Platform)
 
 Backend API for the DegreeFinder Platform.
 Provides authentication, college management, filtering, comparison, and image uploads.
 
-Features:
+---
 
-**Authentication**
-User registration
-Login with JWT
-Role-based access (Admin / User)
+## Features
 
-**College Management (Admin)**
-Create college
-Update college
-Delete college
-Draft / publish status
-Image upload via Cloudinary
+### Authentication
 
-**Public APIs**
-Get colleges
-Pagination
-Search
-Filtering
-Sorting
-College comparison
-Performance & Security
-Database indexing
-Input validation
+* User registration
+* Login with JWT
+* Role-based access (Admin / User)
 
-**Tech Stack**
-Node.js
-Express.js
-MongoDB Atlas
-Mongoose
-Cloudinary
-JWT Authentication
-Multer
+### College Management (Admin)
 
-**Folder Structure**
+* Create college
+* Update college
+* Delete college
+* Draft / publish status
+* Image upload via Cloudinary
+
+### Public APIs
+
+* Get colleges
+* Pagination
+* Search
+* Filtering
+* Sorting
+* College comparison
+
+### Performance & Security
+
+* Database indexing
+* Input validation
+
+---
+
+## Tech Stack
+
+* Node.js
+* Express.js
+* MongoDB Atlas
+* Mongoose
+* Cloudinary
+* JWT Authentication
+* Multer
+
+---
+
+## Folder Structure
+
+```
 src/
-├── controllers
-├── routes
-├── models
-├── middleware
-├── config
-├── utils
-├── app.js
-└── server.js
+ ├── controllers
+ ├── routes
+ ├── models
+ ├── middleware
+ ├── config
+ ├── utils
+ ├── app.js
+ └── server.js
+```
 
+---
 
-Environment Variables
+## Environment Variables
 
-Create a .env file:
+Create a `.env` file:
 
+```
 PORT=5000
 MONGO_URI=your_mongo_uri
 JWT_SECRET=your_secret
 CLOUDINARY_CLOUD_NAME=xxx
 CLOUDINARY_API_KEY=xxx
 CLOUDINARY_API_SECRET=xxx
+```
 
-Installation & Running
+---
 
+## Installation & Running
+
+```
 npm install
 npm run dev
+```
 
 Server runs at:
 http://localhost:5000
 
-API Endpoints
+---
 
-**Auth**
+## API Endpoints
 
-POST /api/auth/register
-POST /api/auth/login
+### Auth
 
-**Colleges**
+POST `/api/auth/register`
+POST `/api/auth/login`
 
-GET /api/colleges
-POST /api/colleges (Admin)
-PUT /api/colleges/ (Admin)
-DELETE /api/colleges/ (Admin)
+### Colleges
 
-**Compare**
+GET `/api/colleges`
+POST `/api/colleges` (Admin)
+PUT `/api/colleges/:id` (Admin)
+DELETE `/api/colleges/:id` (Admin)
 
-GET /api/colleges/compare?ids=id1,id2
+### Compare
 
-**Deployment**
+GET `/api/colleges/compare?ids=id1,id2`
+
+---
+
+## Deployment
 
 Backend deployed at:
 https://degreefinder-backend.onrender.com
 
+---
 
+## Author
 
-**Author**
 Mukul
 GitHub: https://github.com/mukuln18
