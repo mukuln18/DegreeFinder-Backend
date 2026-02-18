@@ -121,5 +121,4 @@ https://degreefinder-backend.onrender.com
 
 ## Author
 
-Mukul
 GitHub: https://github.com/mukuln18
